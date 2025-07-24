@@ -114,6 +114,7 @@ main .left button:hover {
   box-shadow: 0 12px 24px rgba(76, 110, 245, 0.3);
   transform: translateY(-2px);
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 main .left:hover,
