@@ -11,7 +11,7 @@ import Markdown from 'react-markdown'
 const App = () => {
   useEffect(() => {
     prism.highlightAll();
-  });
+  });      
 
   // State for taking code as input on left side
   const [code, setCode] = useState(``);
@@ -27,6 +27,7 @@ const App = () => {
 
   return (
     <div>
+      <div className="MainTitle">ByteCritic: Your Byte Sized Code Analyzer</div>
       <main>
         <div className="left">
           <div className="code">
@@ -38,7 +39,6 @@ const App = () => {
               }
               padding={10}
               style={{
-                fontFamily: `"monospace","Fira code"`,
                 fontSize: 22.5,
                 border: "1px solid black",
                 height: "100%",
@@ -50,7 +50,7 @@ const App = () => {
           <button onClick={reviewCode}>Review</button>
         </div>
         <div className="right">
-        <h1><Markdown>{review}</Markdown></h1>
+        <Markdown>{review}</Markdown>
         </div>
       </main>
     </div>
