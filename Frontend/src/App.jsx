@@ -21,7 +21,7 @@ const App = () => {
 
   // connecting with backend
   const reviewCode = async ()=>{
-    const response = await axios.post('https://bytecritic-byte-sized-code-analyzer.onrender.com/ai',{prompt:code})
+    const response = await axios.post('https://bytecritic-byte-sized-code-analyzer.onrender.com/ai/get-review',{prompt:code})
     setReview(response.data)
   }
 
