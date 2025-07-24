@@ -13,11 +13,13 @@ const App = () => {
     prism.highlightAll();
   });
 
+  // State for taking code as input on left side
   const [code, setCode] = useState(``);
 
-  // State variable to display response on frontend
+  // State variable to display response on frontend on right side
   const [review, setReview] = useState(``)
 
+  // connecting with backend
   const reviewCode = async ()=>{
     const response = await axios.post('http://localhost:3000/ai/get-review',{prompt:code})
     setReview(response.data)
@@ -37,14 +39,14 @@ const App = () => {
               padding={10}
               style={{
                 fontFamily: `"monospace","Fira code"`,
-                fontSize: 18,
+                fontSize: 22.5,
                 border: "1px solid black",
                 height: "100%",
                 width: "100%",
               }}
             />
           </div>
-          <span className="review"></span>
+          
           <button onClick={reviewCode}>Review</button>
         </div>
         <div className="right">

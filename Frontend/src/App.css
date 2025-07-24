@@ -83,3 +83,7 @@ main .right {
   margin: 0;
   background-color: black;
 }
+
+h1{
+  font-size: 150%;
+}
