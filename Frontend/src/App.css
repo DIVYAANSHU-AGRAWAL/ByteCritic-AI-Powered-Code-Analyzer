@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100vh; /* full screen height */
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  background-color: #f5f5f5;
+}
+
+main .left, main .right {
+  flex: 1;
+  border-radius: 0.7rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%; /* crucial fix */
+}
+
+/* Inside Left: Code editor and Review Box */
+main .left .code {
+  flex: 1;
+  background-color: #f0f8ff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+main .left .review {
+  height: 120px;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+/* Button */
+main .left button {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #007bff;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main .left button:hover {
+  background-color: #0056b3;
+}
+
+/* Right panel */
+main .right {
+  overflow-y: auto;
+  padding: 1rem 2rem;
+
+}
+
+.left .code{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: black;
+}
