@@ -124,6 +124,12 @@ button{
   transition: all 0.3s ease-in;
 }
 
+.right button{
+  position: absolute;
+  bottom: 2rem; /* fixed */
+  right: 1rem;
+}
+
 button:hover {
   background: linear-gradient(135deg, #0055ff, #5e57ff);
   box-shadow: 0 12px 24px rgba(76, 110, 245, 0.3);
