@@ -57,6 +57,7 @@ main .right {
   height: 100%;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
   transition: box-shadow 0.3s ease;
+  line-height: 2rem;
 }
 
 /* Inside Left: Code editor and Review Box */
@@ -170,6 +171,18 @@ h1 {
 @media (max-width: 768px) {
   main {
     flex-direction: column;
+  }
+  main .right{
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    word-wrap: break-word;  /* Prevents overflow */
+}
+
+  @media (max-width: 480px) {
+  main .right {
+    padding: 0.8rem;
+    font-size: 0.85rem;
   }
 }
 
