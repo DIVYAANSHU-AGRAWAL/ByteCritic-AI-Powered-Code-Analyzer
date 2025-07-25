@@ -174,10 +174,15 @@ h1 {
   }
 
   main .right {
-    padding: 1rem;
-    font-size: 0.9rem;
-    line-height: 1.5rem;
+    padding: 1.1rem;
+    font-size: 1.0rem;
+    line-height: 1.6rem;
     word-wrap: break-word; /* Prevents overflow */
+  }
+
+  button{
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
   }
 }
 
