@@ -172,19 +172,22 @@ h1 {
   main {
     flex-direction: column;
   }
-  main .right{
+
+  main .right {
     padding: 1rem;
     font-size: 0.9rem;
     line-height: 1.5rem;
-    word-wrap: break-word;  /* Prevents overflow */
+    word-wrap: break-word; /* Prevents overflow */
+  }
 }
 
-  @media (max-width: 480px) {
+@media (max-width: 480px) {
   main .right {
     padding: 0.8rem;
     font-size: 0.85rem;
   }
 }
+
 
 .right{
   color:#f1eeee;
