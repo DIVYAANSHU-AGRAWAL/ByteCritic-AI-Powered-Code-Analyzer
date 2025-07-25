@@ -4,6 +4,7 @@ import "prismjs/themes/prism-tomorrow.css";
 import prism from "prismjs";
 import { useEffect } from "react";
 import { useState } from "react";
+import { useRef } from "react";
 import Editor from "react-simple-code-editor";
 import axios from 'axios';
 import Markdown from 'react-markdown'
@@ -21,6 +22,16 @@ const App = () => {
 
   // State variable for message to display while waiting for API response
   const [loading, setLoading] = useState(false);
+
+  const reviewRef = useRef();
+
+  const copyToClipboard = () => {
+    if(reviewRef.current){
+      navigator.clipboard.writeText(reviewRef.current.innerText);
+      alert("Copied the response to clipboard!");
+    }
+  }
+    
 
   // connecting with backend
   const reviewCode = async ()=>{
@@ -55,7 +66,10 @@ const App = () => {
           <button onClick={reviewCode}>Review</button>
         </div>
         <div className="right">
+          <div ref = {reviewRef}>
         {loading ? <p>Analyzing code...</p> : <Markdown>{review}</Markdown>}
+            </div>
+          <button onClick ={copyToClipboard}>Copy Review</button>
         </div>
       </main>
     </div>
