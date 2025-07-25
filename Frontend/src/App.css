@@ -125,9 +125,8 @@ button{
 }
 
 .right button{
-  position: absolute;
-  bottom: 2rem; /* fixed */
-  right: 1rem;
+  margin-top: 2rem;
+  width: 50%;
 }
 
 button:hover {
