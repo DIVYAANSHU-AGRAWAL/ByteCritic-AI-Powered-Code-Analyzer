@@ -13,11 +13,11 @@ ByteCritic is a simple yet powerful full-stack application that allows developer
 
 ## Features
 
-- ✍️ **Code Submission:** Paste any code snippet from supported languages.
-- 🤖 **AI Review:** Get suggestions, feedback, and improvements using Google GenAI (Gemini API).
-- ⚡ **Fast & Lightweight:** Clean interface, fast response.
-- 🔗 **Fully Deployed:** Hosted on Render (both client and server).
-- 🔒 **CORS Setup:** Configured to handle secure cross-origin requests.
+-  **Code Submission:** Paste any code snippet from supported languages.
+-  **AI Review:** Get suggestions, feedback, and improvements using Google GenAI (Gemini API).
+-  **Fast & Lightweight:** Clean interface, fast response.
+-  **Fully Deployed:** Hosted on Render (both client and server).
+-  **CORS Setup:** Configured to handle secure cross-origin requests.
 
 ---
 
