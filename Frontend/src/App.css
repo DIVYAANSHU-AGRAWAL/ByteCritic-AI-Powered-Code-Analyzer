@@ -109,7 +109,22 @@ main .left button {
   transition: all 0.3s ease-in;
 }
 
-main .left button:hover {
+button{
+  bottom: 2rem; /* fixed */
+  right: 1rem;
+  background: linear-gradient(135deg, #4e8cff, #6c63ff);
+  color: #f1eeee;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(76, 110, 245, 0.2);
+  transition: all 0.3s ease-in;
+}
+
+button:hover {
   background: linear-gradient(135deg, #0055ff, #5e57ff);
   box-shadow: 0 12px 24px rgba(76, 110, 245, 0.3);
   transform: translateY(-2px);
