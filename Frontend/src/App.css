@@ -92,6 +92,14 @@ main .left .review {
   
 }
 
+.helper-text {
+  
+  font-size: 18px;
+  color: #ffffff;
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* Button */
 main .left button {
   position: absolute;
