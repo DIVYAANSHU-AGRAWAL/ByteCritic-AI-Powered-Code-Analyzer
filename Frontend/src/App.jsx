@@ -47,6 +47,7 @@ const App = () => {
       <main>
         <div className="left">
           <div className="code">
+            <p className="helper-text">Hi there! Paste your code here and click 'Review' to get feedback.</p>
             <Editor
               value={code}
               onValueChange={(code) => setCode(code)}
