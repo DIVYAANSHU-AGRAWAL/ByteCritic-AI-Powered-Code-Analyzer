@@ -19,10 +19,15 @@ const App = () => {
   // State variable to display response on frontend on right side
   const [review, setReview] = useState(``)
 
+  // State variable for message to display while waiting for API response
+  const [loading, setLoading] = useState(false);
+
   // connecting with backend
   const reviewCode = async ()=>{
+    setLoading(true);
     const response = await axios.post('https://bytecritic-byte-sized-code-analyzer.onrender.com/ai/get-review',{prompt:code})
     setReview(response.data)
+    setLoading(false);
   }
 
   return (
@@ -50,7 +55,7 @@ const App = () => {
           <button onClick={reviewCode}>Review</button>
         </div>
         <div className="right">
-        <Markdown>{review}</Markdown>
+        {loading ? <p>Analyzing code...</p> : <Markdown>{review}</Markdown>}
         </div>
       </main>
     </div>
