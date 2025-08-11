@@ -44,6 +44,9 @@ const App = () => {
   return (
     <div>
       <div className="MainTitle">ByteCritic: Your Byte Sized Code Analyzer</div>
+      <div className="Subtitle">
+        Created with passion by <strong>Divyaanshu Agrawal</strong>
+      </div>
       <main>
         <div className="left">
           <div className="code">
